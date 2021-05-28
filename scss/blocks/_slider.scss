@@ -1,0 +1,106 @@
+@import "../vars";
+
+.slider {
+  background-color: $secondary-color;
+
+  &__inner {
+    padding-top: 170px;
+  }
+
+  &__item-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 50%;
+    font-family: $main-font;
+    line-height: 67px;
+    color: $dark;
+    margin: 0 0 55px 0;
+  }
+
+  &__img {
+    width: 50%;
+  }
+
+  &__price {
+    position: absolute;
+    max-width: 255px;
+    right: 0;
+  }
+
+  &__old-price,
+  &__new-price {
+    display: block;
+    font-family: $main-font;
+  }
+  /*9900*/
+  &__old-price {
+    font-size: 24px;
+
+    font-weight: bold;
+    line-height: 29px;
+    line-height: 100%;
+    text-align: right;
+    vertical-align: top;
+    letter-spacing: 5%;
+    color: $dark;
+    text-decoration: line-through;
+  }
+  /*1900*/
+  &__new-price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: $ruby;
+  }
+
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .slick-dots button {
+    font-size: 0;
+    border: none;
+    background-color: $accent-color;
+    width: 40px;
+    height: 8px;
+    margin: 15px;
+    cursor: pointer;
+  }
+  .slick-active button {
+    background-color: #cecece;
+  }
+  /* скидки до 100%*/
+  &__promo {
+    font-size: 50px;
+    line-height: 100%;
+    line-height: 67px;
+    letter-spacing: 4%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: Left;
+  }
+  */
+  /* Зимняя распродажа */
+
+  &__title {
+    position: relative;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+
+    color: $dark;
+  }
+}
